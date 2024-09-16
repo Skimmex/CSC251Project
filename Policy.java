@@ -56,7 +56,7 @@ public class Policy
    } 
    
    public double getHolderHeight(){
-      return holderSmokes;
+      return holderHeight;
    } 
    
    public double getHolderWeight(){
@@ -64,7 +64,7 @@ public class Policy
    } 
    
    public double getBMI(){
-      return bmi;
+      return (holderWeight*703)/(holderHeight*holderHeight);
    }
    
    public double getPrice(){
