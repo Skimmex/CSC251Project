@@ -31,6 +31,38 @@ public class Policy
       holderWeight = weight;
    }
    
+   public int getPolicyNumber(){
+      return policyNumber;
+   }   
+   
+   public String getHolderFirstName(){
+      return holderFirstName;
+   }   
+   
+   public String getProviderName(){
+      return providerName;
+   }   
+   
+   public String getHolderLastName(){
+      return holderLastName;
+   }   
+   
+   public int getHolderAge(){
+      return holderAge;
+   }   
+   
+   public String getHolderSmokes(){
+      return holderSmokes;
+   } 
+   
+   public double getHolderHeight(){
+      return holderSmokes;
+   } 
+   
+   public double getHolderWeight(){
+      return holderWeight;
+   } 
+   
    public double getBMI(){
       return bmi;
    }
@@ -48,4 +80,5 @@ public class Policy
       }
       return baseFee;
    }
+
 }
