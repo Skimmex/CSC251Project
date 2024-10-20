@@ -66,7 +66,7 @@ public class Policy
    public double getBMI(){
       return (holderWeight*703)/(holderHeight*holderHeight);
    }
-   //@return price of policy based on smoking and bmi conditions
+   //@return price of policy based on smoking and bmi conditions 
    public double getPrice(){
       int baseFee = 600;
       if (holderAge > 50){
