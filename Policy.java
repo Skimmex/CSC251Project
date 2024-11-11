@@ -1,7 +1,7 @@
 public class Policy
 {
    private int policyNumber;
-   private int numObjects=0;
+   private static int numObjects=0;
 
    
    public Policy() {
