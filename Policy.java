@@ -13,6 +13,11 @@ public class Policy
    //@return policyNumber
    public int getPolicyNumber(){
       return policyNumber;
-
+   }
+   
+   public String toString(){
+         System.out.println("Policy Number: " + getPolicyNumber());
+         System.out.println("\n");
+   }
 
 }

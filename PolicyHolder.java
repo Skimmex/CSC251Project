@@ -1,6 +1,5 @@
 public class PolicyHolder
 {
-   private int policyNumber;
    private String providerName;
    private String holderFirstName;
    private String holderLastName;
@@ -11,7 +10,6 @@ public class PolicyHolder
    private double bmi = (holderWeight*703)/(holderHeight*holderHeight);
    
    public Policy() {
-      policyNumber = 0;
       providerName = "";
       holderFirstName = "";
       holderLastName = "";
@@ -20,8 +18,7 @@ public class PolicyHolder
       holderHeight = 0;
       holderWeight = 0;
    }
-   public Policy(int number, String name,String fName, String lName, int age, String smoker, double height, double weight) {
-      policyNumber = number;
+   public Policy(String name,String fName, String lName, int age, String smoker, double height, double weight) {
       providerName = name;
       holderFirstName = fName;
       holderLastName = lName;
@@ -30,10 +27,7 @@ public class PolicyHolder
       holderHeight = height;
       holderWeight = weight;
    }
-   //@return policyNumber
-   public int getPolicyNumber(){
-      return policyNumber;
-   }   
+
    //@return holderFirstName
    public String getHolderFirstName(){
       return holderFirstName;
@@ -79,6 +73,19 @@ public class PolicyHolder
          baseFee+=(bmi-35)*20;
       }
       return baseFee;
+   }
+   
+   public string toString(){
+         System.out.println("Provider Name: " + getProviderName());
+         System.out.println("Policyholder’s First Name: " + getHolderFirstName());
+         System.out.println("Policyholder’s Last Name: " + getHolderLastName());
+         System.out.println("Policyholder’s Age: " + getHolderAge());
+         System.out.println("Policyholder’s Smoking Status: " + getHolderSmokes());
+         System.out.println("Policyholder’s Height: " + getHolderHeight() + " inches");
+         System.out.println("Policyholder’s Weight: " + getHolderWeight()+ " pounds");
+         System.out.printf("Policyholder’s BMI: %.2f", getBMI());
+         System.out.printf("\nPolicy Price: $%.2f", getPrice());
+         System.out.println("\n");
    }
 
 }
